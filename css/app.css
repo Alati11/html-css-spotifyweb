@@ -1,0 +1,43 @@
+/* Default settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure > img {
+	display: block;
+}
+
+
+a {
+    text-decoration: none;
+    color: currentColor;
+    display: inline-block;
+}
+
+/* layout*/
+.container.
+
+
+
+/* debug*/
+
+.container {
+    border: 1px solid red;
+    padding: 10px;
+}

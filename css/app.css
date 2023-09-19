@@ -45,7 +45,7 @@ a {
    flex-grow: 0;
 
 }
-.col .col-bottom {
+.col .col-toolbar {
     flex-grow: 1;
     height: 50px;
     width:800px;
@@ -56,7 +56,7 @@ a {
     display: flex;
   
 }
-.col-bottom .{
+.col-toolbar .{
     border: 2px solid green;
     height: 100px;
     flex-grow: 1;
@@ -97,4 +97,24 @@ a {
     padding: 10px; 
    
 
+}
+
+@media (min-width: 576px) {
+}
+    .sidebar {
+        width: 50px;
+        
+    }
+
+@media (min-width: 768px) {
+	
+}
+
+@media (min-width: 992px) {
+}
+	
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
 }

@@ -31,13 +31,70 @@ a {
 }
 
 /* layout*/
-.container.
+.container {
+    min-height: 800px ;
+    
+}
+.row {
+    display: flex;
+    flex-direction: column;
+}
+.col .col-top {
+   width: 100%;
+   height: 800px;
+   flex-grow: 0;
+
+}
+.col .col-bottom {
+    flex-grow: 1;
+    height: 50px;
+    width:800px;
+    border: 5px;
+   
+}
+.col {
+    display: flex;
+  
+}
+.col-bottom .{
+    border: 2px solid green;
+    height: 100px;
+    flex-grow: 1;
+}
+.col-top {
+    height: 720px;
+    border: 2px solid black;
+    
+    
+}
+
+.content {
+    border: 2px solid black;
+
+}
+.sidebar {
+    border: 2px solid purple;
+    width: 230px;
+
+
+}
+.content {
+    border: 2px solid green;
+    width: 100%;
+
+}
 
 
 
 /* debug*/
 
-.container {
-    border: 1px solid red;
-    padding: 10px;
+.debug .container {
+    border: 5px solid red;
+    padding: 10px; 
+}
+.debug .col .{
+    border: 2px solid rgb(42, 22, 192);
+    padding: 10px; 
+   
+
 }

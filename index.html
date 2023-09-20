@@ -11,41 +11,86 @@
 </head> 
 <body class="debug">
     <main>
-        <section class="container">
-            <div class="row">
-                <div class="col col-top">
+        
+            <div id="app" class="flex flex-column">
+                <div class="app__content grow-1 flex">
                     
-                    <div class="sidebar">
+                    <div class="app_sidebar">
                         sidebar
                     </div>
-                    <div class="content">
+                    <div class="app__main-content grow-1">
                         content
                     </div>
-                    
-                    
+                </div>
 
-                </div>
-                <div class="col">
-                    <div class="col-bottom toolbar">
-                        <div class="icon icon-right">
-                            toolbar
+
+                <aside class="app__toolbar flex items-center justify-between">
+                    <div class="album-preview flex items-center">
+                        <div class="album flex grow-1 items-center">
+                            <img class="album__cover" src="./img/sinister.jpeg" alt="" />
+    
+                            <div>
+                                <h4 class="album__author">Sinister</h4>
+                                <p class="album__track-name">Brano nome</p>
+                            </div>
                         </div>
-                        <div class="icon icon-center">
-                            toolbar
-                        </div>
-                        <div class="icon icon-left">
-                            toolbar
-                        </div>
-                        
+                        <ul class="album-controls flex">
+                            <li class="control-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </li>
+                            <li class="control-icon">
+                                <i class="fa-regular fa-folder"></i>
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                    <div class="track-player">
+                        <ul class="controls flex items-center justify-center">
+                            <li class="control-icon control--shuffle">
+                                <i class="fa-solid fa-shuffle"></i>
+                            </li>
+                            <li class="control-icon control--backward">
+                                <i class="fa-solid fa-backward-step"></i>
+                            </li>
+                            <li class="control-icon control--play">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </li>
+                            <li class="control-icon control--forward">
+                                <i class="fa-solid fa-forward-step"></i>
+                            </li>
+                            <li class="control-icon control--rewind">
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </li>
+                        </ul>
+                        <div class="track-timeline flex items-center">
+                            <div class="time time--current">0:25</div>
+                            <div class="progress-bar grow-1">
+                                <div class="progress"></div>
+                                <div class="progress-handler"></div>
+                            </div>
+                            <div class="time time-total">4:35</div>
+                        </div>
+                    </div>
+                    <ul class="track-controls flex items-center">
+                        <li class="control-icon">
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </li>
+                        <li class="control-icon">
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </li>
+                        <li class="control-icon">
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </li>
+                        <li class="progress-bar grow-1">
+                            <div class="progress"></div>
+                            <div class="progress-handler"></div>
+                        </li>
+                    </ul>
+                </aside>
             </div>  
-        </section>
+        
     </main>
 
-    <aside>
-
-    </aside>
+    
     
 </body>
 </html>

@@ -29,91 +29,149 @@ a {
     color: currentColor;
     display: inline-block;
 }
-
-/* layout*/
-.container {
-    min-height: 800px ;
-    
-}
-.row {
-    display: flex;
-    flex-direction: column;
-}
-.col .col-top {
-   width: 100%;
-   height: 800px;
-   flex-grow: 0;
-
-}
-.col .col-bottom {
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    width:800px;
-    border: 5px;
-    background-color: #282828;
-    color: white;
-   
-}
-.col {
-    display: flex;
-  
-}
-/* .col-bottom .{
-    border: 2px solid green;
-    height: 100px;
-    flex-grow: 1;
-    color: white;
-} */
-.col-top {
-    height: 720px;
-    border: 2px solid black;
-    
-    
+/* utilities */
+.flex {
+	display: flex;
 }
 
-.content {
-    border: 2px solid black;
-
-}
-.sidebar {
-    border: 2px solid purple;
-    width: 230px;
-
-
-}
-.content {
-    border: 2px solid green;
-    width: 100%;
-
+.flex-column {
+	flex-direction: column;
 }
 
-/*toolbar*/
+.grow-1 {
+	flex-grow: 1;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.items-center {
+	align-items: center;
+}   
+
+
+
+
+
  
-.icon {
-    
-    border: 2 solid white;
-}
-.col-bottom .toolbar {
-    display: flex;
-    justify-content: space-between;
+/* APP */
+#app {
+	height: 100vh;
+	color: white;
 }
 
-
-
-/* debug*/
-
-.debug .container {
-    border: 5px solid red;
-    padding: 10px; 
+#app,
+.app__content,
+.app__toolbar,
+.app__sidebar,
+.app__main-content {
+	overflow: hidden;
 }
-.debug .col .{
-    border: 2px solid rgb(42, 22, 192);
-    padding: 10px; 
-   
 
+.app__toolbar {
+	background-color: #282828;
+	min-height: 90px;
 }
+
+.app__main-content {
+	background-color: #141922;
+}
+
+.app__sidebar {
+	width: 50px;
+	background-color: black;
+	
+}
+
+/* app toolbar */
+.track-player {
+	width: 50%;
+}
+
+.album-preview,
+.track-controls {
+	flex-basis: var(--sidebar-width);
+}
+
+.album-preview {
+	padding: 0 10px;
+	gap: 20px;
+}
+
+.album,
+.album-controls {
+	gap: 10px;
+}
+
+.album-controls {
+	flex-wrap: wrap;
+}
+
+.album__cover {
+	width: 28px;
+	aspect-ratio: 1;
+}
+
+.track-player .controls {
+	gap: 20px;
+	font-size: 22px;
+}
+
+.controls .control-icon.control--play {
+	font-size: 30px;
+	margin: 0 10px;
+}
+
+.progress-bar {
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 999px;
+	position: relative;
+}
+
+.progress {
+	height: 6px;
+	border-radius: 999px;
+	width: var(--progress);
+	background-color: rgb(179, 179, 179);
+}
+
+.track-timeline {
+	gap: 14px;
+}
+
+.progress-handler {
+	width: 16px;
+	height: 16px;
+	background-color: white;
+	border-radius: 999px;
+	position: absolute;
+	left: var(--progress);
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+.progress-bar:hover .progress-handler {
+	display: block;
+}
+
+.progress-bar:hover .progress {
+	background-color: var(--green);
+}
+
+.track-controls {
+	gap: 16px;
+	padding: 0px 10px;
+	font-size: 18px;
+}
+
+
+/* media query*/
 
 @media (min-width: 576px) {
 }
@@ -135,7 +193,7 @@ a {
     }
 }
 	
-@media (min-width: 1200px) {
+@media (min-width: 1200px) {    
     .sidebar {
         width: 230px;  
     }
@@ -146,4 +204,13 @@ a {
     .sidebar {
         width: 230px;  
     }
+}
+/* DEBUG */
+.debug #app {
+	background-color:green;
+}
+
+.debug .app__content > * {
+	border: 2px solid black;
+	padding: 20px;
 }

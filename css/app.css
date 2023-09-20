@@ -226,12 +226,13 @@ i {
 .sidebar__icon-app {
     margin-bottom: 10px;
     padding: 15px;
-    margin-top: 70px;
+    margin-top: 430px;
     
 }
 .artist-name {
     font-size: 15px;
     align-items: center;
+    display: none;
 }
 .icon-artist {
     display: flex;
@@ -279,6 +280,12 @@ i {
     .logo {
       
         display: inline-block;
+    }
+    .artist-name {
+        display: inline-block;
+    }
+    .sidebar__icon-app {
+        margin-top: 70px;
     }
     
 }

@@ -361,10 +361,27 @@ i {
     padding: 20px;
 }
 .track-photo {
+    width: 180px;
     justify-content: center;
-    border: 1px solid white;
+    
+    
 }
 
+.track-photo {
+    
+}
+.title-type {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.subtitle__type {
+    text-align: center;
+    font-size: 12px;
+    
+
+}
 /* media query*/
 
 @media (min-width: 576px) {

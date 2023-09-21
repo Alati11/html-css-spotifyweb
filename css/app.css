@@ -35,7 +35,8 @@ a {
     color: currentColor;
     display: inline-block;
 }
-/* utilities */
+
+/*UTILITIES*/
 .flex {
 	display: flex;
 }
@@ -59,9 +60,6 @@ a {
 .items-center {
 	align-items: center;
 }   
-
-
-
 
 
  
@@ -99,7 +97,7 @@ a {
 	
 }
 
-/* app toolbar */
+/* APP TOOLBAR */
 .track-player {
 	width: 50%;
 }
@@ -181,7 +179,7 @@ a {
 	font-size: 18px;
 }
 
-/*menu sidebar*/
+/*MENU SIDEBAR*/
 .sidebar__menu {
     padding: 15px;
     line-height: 1.5em;
@@ -240,7 +238,7 @@ i {
 .playlist {
     display: none;
 }
-/* sidebar*/
+/*SIDEBAR*/
 .sidebar__icon-app {
     margin-bottom: 10px;
     padding: 15px;
@@ -273,7 +271,7 @@ i {
     margin-bottom: 10px;
     display: none; 
 }
-/* upgrade*/
+/* UPGRADE*/
 .upgrade {
     width: 100%;
     min-height: 80px;
@@ -293,12 +291,28 @@ i {
     font-size: 14px;
 }
 
+/*CONTENT*/
+
+ .nav-menu {
+    justify-content: center;
+    margin-top: 10px; 
+} 
+.nav-menu__option {
+    gap: 15px;
+    font-size: 12px;
+    
+    
+} 
+
 /* media query*/
 
 @media (min-width: 576px) {
 
     .sidebar {
         width: 50px;  
+    }
+    .logo-xs {
+        min-width: 50px;
     }
    
 }

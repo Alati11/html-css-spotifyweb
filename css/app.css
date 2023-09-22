@@ -347,7 +347,8 @@ i {
 
 .nav-menu__option {
 	position: relative;
-    align-self: stretch;
+    /* align-self: stretch; */
+    flex-wrap: wrap;
 }
 .nav-menu__option.menu__item.active::after {
 	content: '';

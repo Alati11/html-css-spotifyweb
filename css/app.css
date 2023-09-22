@@ -36,6 +36,7 @@ a {
     display: inline-block;
 }
 
+
 /*UTILITIES*/
 .flex {
 	display: flex;
@@ -64,6 +65,11 @@ a {
 .items-align {
     align-items: baseline;
 }
+
+.title-white {
+    color: white;
+}
+
 .row {
 	display: flex;
 	flex-wrap: wrap;
@@ -100,11 +106,14 @@ a {
 	
 }
 
- 
+ .a:hover {
+    background-color: white;
+ }
+
 /* APP */
 #app {
 	height: 100vh;
-	color: white;
+	color: gray;
 
 }
 
@@ -231,13 +240,10 @@ a {
 }
 
 .logo-xs {
-    
-    width: 50px;
+    height: 50px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-
-
 }
 
 .sidebar__text {
@@ -248,8 +254,11 @@ a {
     align-items: center;
 }
 
-.sidebar__text .text-great {
-    font-size: 30px;
+.sidebar__text .text-great  {
+   display: none;
+}
+
+.sidebar__text {
     display: none;
 }
 .sidebar__menu-icon {
@@ -271,6 +280,7 @@ i {
     font-size: 15px;
     margin-top: 25px;
     margin-bottom: 8px;
+    
 }
 
 .playlist {
@@ -337,7 +347,7 @@ i {
     margin-top: 10px; 
 } 
 .container-album {
-    overflow: auto;
+    overflow:auto;
 
 }
 .nav-menu__option {
@@ -374,9 +384,6 @@ i {
     text-align: left;
 }
 
-.track-photo {
-    
-}
 .title-type {
     text-align: center;
     margin-bottom: 8px;
@@ -420,6 +427,7 @@ i {
 	}
     .sidebar__text {
         display: inline-block;
+        line-height: 2em;
     }
     .playlist {
         display: inline-block;

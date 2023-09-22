@@ -106,8 +106,8 @@ a {
 	
 }
 
- .a:hover {
-    background-color: white;
+ a:hover {
+    color: white;
  }
 
 /* APP */
@@ -140,8 +140,7 @@ a {
 
 .app__sidebar {
 	min-width: 50px;
-	background-color: black;
-	
+	background-color: black;	
 }
 
 /* APP TOOLBAR */

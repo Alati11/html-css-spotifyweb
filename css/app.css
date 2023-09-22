@@ -92,12 +92,12 @@ a {
 
 .col-2 {
 	flex-basis: calc((100% / 12) * 2);
-	/* flex-basis: calc((100% * 2) / 12); */
+	
 }
 
 .row > [class^='col'] {
-	padding: 0 10px;
-	/* margin-bottom: 20px; */
+	padding: 0 9px;
+	
 }
 
  
@@ -408,7 +408,7 @@ i {
 
 @media (min-width: 768px) {
     .app__sidebar {
-		width: var(--sidebar-width);
+		min-width: var(--sidebar-width);
 	}
 
 	.album__cover {

@@ -108,6 +108,9 @@ a {
  a:hover {
     color: white;
  }
+ i:hover {
+    color:white;
+ }
 
  .track-photo:hover .track-photo__cover {
     opacity: 0.3;  
@@ -143,8 +146,7 @@ a {
 
 .app__main-content {
 	background-color: #141922;
-    overflow: auto;
-  
+    overflow: auto;  
 }
 
 .app__sidebar {
@@ -155,6 +157,10 @@ a {
 /* APP TOOLBAR */
 .track-player {
 	width: 50%;
+}
+
+.album__track-name {
+    font-size: 10px;
 }
 
 .album-preview,
@@ -255,8 +261,7 @@ a {
 .sidebar__text {
     color: gray;
     display: none;
-    font-size: 14px;
-    
+    font-size: 14px;  
 }
 
 .sidebar__text .text-great  {
@@ -268,9 +273,6 @@ a {
     margin-top: 20px;
     margin-bottom:12px;
     line-height: 2em;
-    
-
-
 }
 
 .icon-white {
@@ -401,13 +403,15 @@ i {
 
 .title-recently-style {
     margin-top: 25px;
-    padding: 20px;
+    margin-bottom: 15px;;
+    padding-left: 10px;
 }
 
 .track-photo {
     width: 180px;
     justify-content: center;
     position: relative;
+    margin-top: 15px;
 }
 
 .title-for-user {
@@ -427,7 +431,7 @@ i {
 
 .subtitle__user {
     text-align: left;
-    padding-left: 20px;
+    padding-left: 10px;
     font-size: 12px;
     margin-bottom: 15px;
 }

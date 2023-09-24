@@ -45,6 +45,9 @@ a {
 .flex-column {
 	flex-direction: column;
 }
+.flex-start {
+    justify-content: flex-start;
+}
 
 .grow-1 {
 	flex-grow: 1;
@@ -64,10 +67,6 @@ a {
 
 .items-align {
     align-items: baseline;
-}
-
-.title-white {
-    color: white;
 }
 
 .row {
@@ -248,33 +247,36 @@ a {
 }
 
 .logo-xs {
-    height: 50px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+   width: 20px;
+   margin:0 auto;
 }
 
 .sidebar__text {
     color: gray;
     display: none;
     font-size: 14px;
-    line-height: 30px;
-    align-items: center;
+    
 }
 
 .sidebar__text .text-great  {
    display: none;
+   color: gray;
 }
 
-.sidebar__text {
-    display: none;
-}
 .sidebar__menu-icon {
     margin-top: 20px;
+    margin-bottom:12px;
     line-height: 2em;
+    
+
+
 }
 
 .icon-white {
+    color: white;
+}
+
+.title-white {
     color: white;
 }
 
@@ -286,26 +288,31 @@ i {
 
 .sidebar__title {
     font-size: 15px;
-    margin-top: 25px;
-    margin-bottom: 8px;   
+    /* margin-top: 25px; */
+    margin-bottom: 5px; 
+    display: inline-block;
 }
 
 .playlist {
     display: none;
 }
+
 /*SIDEBAR*/
 .sidebar__icon-app {
     margin-bottom: 10px;
     padding: 15px;
-    margin-top: 380px;
-    
+    margin-top: 430px;
 }
+
 .artist-name {
+    color: white;
     font-size: 15px;
     align-items: center;
     margin-left:8px;
     display: none;
+
 }
+
 .icon-artist {
     display: flex;
     align-items: center;
@@ -313,16 +320,18 @@ i {
 }
 
 .install {
-    display: flex;
-    margin-bottom:20px;
+    gap:8px;
+}
+.icon-download {
+   width: 25px;
 }
 
 .line-gray {
     background-color: #282828;
     height: 2px;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     display: none; 
 }
 
@@ -389,7 +398,8 @@ i {
 }
 
 .title-recently-style {
-    margin-top: 25px;
+    margin-top: 0 25px;
+    
     padding: 20px;
 }
 .track-photo {
@@ -417,6 +427,7 @@ i {
     text-align: left;
     padding-left: 20px;
     font-size: 12px;
+    margin-bottom: 15px;
 }
 .middle {
     transition: .5s ease;
@@ -461,7 +472,7 @@ i {
 	}
     .sidebar__text {
         display: inline-block;
-        line-height: 2em;
+        line-height: 2.5em;
     }
     .playlist {
         display: inline-block;
@@ -476,7 +487,7 @@ i {
         display: inline-block;
     }
     .sidebar__icon-app {
-        margin-top: 70px;
+        margin-top: 50px;
     }
     .line-gray {
         display: block;

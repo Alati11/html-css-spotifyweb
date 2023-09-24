@@ -22,7 +22,7 @@
                                 <img class="logo-xl" src="./img/logo.svg" alt="">
                                 <img class="logo-xs" src="./img/logo-small.svg" alt="">
                              
-                            <ul class="sidebar__menu-icon">
+                            <ul class="sidebar__menu-icon flex flex-column ">
                                 <li><i class="fa-solid fa-house"></i>
                                     <a class="sidebar__text icon-white" href="#">Home</a>
                                 </li>
@@ -34,27 +34,37 @@
                                 </li>
                             </ul>
                             <div class="playlist">
-                                <h3 class="sidebar__title title-white">PLAYLIST</h3> 
-                                <a href="#"><i class="fa-solid fa-square-plus"></i></a>
-                                <span class="sidebar__text text-great"><a href="#">Crea Playlist</a></span>
-                            </div>
-                            <div>  
-                                <ul class="sidebar__text" >
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li> 
-                                </ul>
-                            </div>          
-                        </div>
+                                <a href="#">
+                                <h3 class="sidebar__title title-white">PLAYLIST</h3>
+                                </a>
+                                <div>
+                                <a href="#" class="sidebar__title">
+                                    <span class="plus-icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </span>
+                                    <span class="sidebar__title"> Crea playlist </span>
+                                </a>
+                                </div>
+                                <div>  
+                                     <ul class="sidebar__text" >
+                                        <li><a href="#">Nome Playlist</a></li>
+                                        <li><a href="#">Nome Playlist</a></li>
+                                        <li><a href="#">Nome Playlist</a></li>
+                                        <li><a href="#">Nome Playlist</a></li>
+                                        <li><a href="#">Nome Playlist</a></li>
+                                        <li><a href="#">Nome Playlist</a></li> 
+                                        <li><a href="#">Nome Playlist</a></li> 
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>  
 
                         <div class="sidebar__icon-app">
 
-                            <div class="inastall">
-                                <i class="fa-solid fa-arrow-down"></i>
-                                <p class="sidebar__text">Installa app</p>
+                            <div class="install flex flex-start">
+                                <!-- <i class="fa-solid fa-arrow-down"></i> -->
+                                <img class="icon-download" src="./img/download.svg" alt=""> 
+                                <a class="sidebar__text" href="#">Installa app</a>
                             </div>    
 
                             <div class="line-gray"></div>
@@ -149,6 +159,8 @@
                                             <p class="subtitle__type">Subtitle</p>
                                         </div>
                                     </div>
+
+                                     
                                 </div>
                                 <!-- fine title-recently -->
 
@@ -157,7 +169,17 @@
                                     <h2 class="title-recently-style title-white">Creato per John Doe</h2>
                                     <p class="subtitle__user">Più ascolti, più accurati saranno i suggerimenti</p>
                                 </div>
-                            
+
+                                
+                                <div class="col-2">
+                                    <div class="track-photo">
+                                        <a href="#"><img class="track-photo__cover" src="./img/mixdaily.jpeg" alt=""></a>
+                                        <span class="middle">
+                                            <a class="play-icon" href="#"><i class="fa-regular fa-circle-play"></i></a>
+                                         </span>
+                                        <h3 class="title-type justify-center title-white">Release Radar</h3>
+                                    </div>
+                                </div>
 
 
 

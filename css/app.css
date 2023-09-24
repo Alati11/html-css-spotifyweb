@@ -143,6 +143,7 @@ a {
 
 .app__main-content {
 	background-color: #141922;
+    overflow: auto;
   
 }
 
@@ -367,15 +368,15 @@ i {
 }
 
 /*CONTENT*/
+.container-lg {
+    /* overflow: auto; */
+}
 
  .container-nav {
     justify-content: center;
     margin-top: 10px; 
 } 
-.container-album {
-    overflow:auto;
 
-}
 .nav-menu__option {
     gap: 15px;
     font-size: 12px;   
@@ -386,6 +387,7 @@ i {
     /* align-self: stretch; */
     flex-wrap: wrap;
 }
+
 .nav-menu__option.menu__item.active::after {
 	content: '';
 	position: absolute;
@@ -398,10 +400,10 @@ i {
 }
 
 .title-recently-style {
-    margin-top: 0 25px;
-    
+    margin-top: 25px;
     padding: 20px;
 }
+
 .track-photo {
     width: 180px;
     justify-content: center;
@@ -429,6 +431,7 @@ i {
     font-size: 12px;
     margin-bottom: 15px;
 }
+
 .middle {
     transition: .5s ease;
     opacity: 0;
@@ -441,12 +444,13 @@ i {
     font-size: 20px;
     color: white;
 }
+
 .play-icon {
     color: white;
     height: 20px;
 }
-/* media query*/
 
+/* media query*/
 @media (min-width: 576px) {
  
     .sidebar {
